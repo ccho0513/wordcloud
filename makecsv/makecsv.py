@@ -30,8 +30,9 @@ def text2pos(silsigan):
 
 token = text2pos(doc_ko)
 FreqDict = Counter(token)
+#print('Counter : ', FreqDict.most_common(100))
 
-data = FreqDict.items()
+data = FreqDict.most_common(100)  #token 빈도값을 기준으로 내림차순으로 정리 ( most_common(n)을 하게 되면, 상위 n개의 빈도값과 token만을 의미 )
 
 with codecs.open('words.csv', 'w', encoding='utf-8') as f:
     f.write('word,freq\n')
