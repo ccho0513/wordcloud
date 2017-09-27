@@ -33,13 +33,13 @@
         <div id="cloud"></div>
         <script type="text/javascript">
         var weight = 3, // change me
-            width = 800,
-            height = 400;
+            width = 1800,
+            height = 800;
         var fill = d3.scale.category20();
         d3.csv("words.csv", function(d) {
                 return {
                     text: d.word,
-                    size: +d.freq / 100 * weight
+                    size: +d.freq / 60 * weight
                 }
             },
             function(data) {
