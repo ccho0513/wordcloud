@@ -1,9 +1,7 @@
 from konlpy.tag import Twitter
-from konlpy.tag import Hannanum
 from collections import Counter
 
 t = Twitter()
-h = Hannanum()
 import csv
 import codecs
 
