@@ -31,7 +31,7 @@ def swap(document, dic):
             document[index] = document[index].replace(Xword,'') #단어삭제
         elif Xword in dic: #그외의 경우
             index = document.index(Xword)
-            document[index] = document[index].replace(Xword, dic[Xword]) #대체가능한 단어 적은 것중에서 실행
+            document[index] = document[index].replace(Xword, dic[Xword]) #대체가능한 단어 적어놓은 것 중에서 실행
     return document
 
 #token
