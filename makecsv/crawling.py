@@ -35,9 +35,6 @@ def get_text(URL, output_file):
 
 # main func
 def main():
-    #if len(argv) != 3:
-     #   print("python [모듈이름] [가져올 페이지 숫자] [결과 파일명]")
-      #  return
     page_num = 25  # 받아올때 str형 정수형으로 변환해서 사용
     output_file_name = 'new.txt'
     URL = URL_BEFORE_PAGE_NUM + URL_AFTER_PAGE_NUM
