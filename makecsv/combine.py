@@ -1,0 +1,3 @@
+import makewordcloud
+
+makewordcloud.main()
